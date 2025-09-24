@@ -15,7 +15,7 @@ Client is written on JavaScript and uses websockets library
 
 1. Clone repository
 ```bash
-1. git clone https://github.com/sounditbox/WSChat.git
+1.git clone https://github.com/sounditbox/WSChat.git
 ```
 2. Install dependencies
 ```bash
