@@ -3,6 +3,7 @@ const message = document.getElementById('message');
 const send = document.getElementById('send');
 send.addEventListener('click', () => {
         sendMessage(message.value);
+        message.value = '';
     }
 );
 let socket;
