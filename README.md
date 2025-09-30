@@ -24,5 +24,5 @@ pip install -r requirements.txt
 3. Create _.env_ file in the root directory as _.env.example_ and set environment variables 
 4. Run server
 ```bash
-python server.py
+python main.py
 ```
