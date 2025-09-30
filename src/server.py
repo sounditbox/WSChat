@@ -1,8 +1,8 @@
 import asyncio
 import json
+import os
 from datetime import datetime
 
-from dotenv import load_dotenv
 from websockets import ConnectionClosedOK
 from websockets.asyncio.server import serve
 from websockets.legacy.client import WebSocketClientProtocol
@@ -43,8 +43,7 @@ async def handler(websocket: WebSocketClientProtocol):
 
 
 async def main():
-    load_dotenv()
-    async with serve(handler, "localhost", 80) as server:
+    async with serve(handler, os.getenv('HOST'), os.getenv('PORT')) as server:
         print("Server started")
         await server.serve_forever()
     print('Server closed')
